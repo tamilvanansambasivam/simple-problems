@@ -1,4 +1,4 @@
-//Program to print odd numbers using if statement
+// C program to display all odd numbers between 1 to n without using if statement
 
 #include <stdio.h>
 
@@ -12,15 +12,15 @@ int main()
 
     printf("All odd numbers from 1 to %d are: \n", n);
 
-    /* Start loop from 1 and increment it by 1 */
-    for(i=1; i<=n; i++)
+     /*
+     * Start a loop from 1, increment it by 2.
+     * For each repetition prints the number.
+     */
+    for(i=1; i<=n; i+=2)
     {
-        /* If 'i' is odd then print it */
-        if(i%2!=0)
-        {
-            printf("%d\n", i);
-        }
+        printf("%d\n", i);
     }
+
 
     return 0;
 }
